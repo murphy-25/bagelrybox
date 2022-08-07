@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Box from '@mui/system/Box';
 
-function App() {
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className='app'>
+      <header className='app-header'>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            m: 2
+          }}
         >
-          Learn React
-        </a>
+          <ButtonGroup variant="text" aria-label="text button group">
+            <Button style={{ fontSize: '20px' }}>
+              Home
+            </Button>
+            <Button style={{ fontSize: '20px' }}>
+              Our Menu
+            </Button>
+            <Button style={{ fontSize: '20px' }}>
+              Contact Us
+            </Button>
+          </ButtonGroup>
+        </Box>
       </header>
     </div>
+
   );
 }
-
-export default App;

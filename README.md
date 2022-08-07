@@ -33,6 +33,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+
+Runs the predeploy and deploy scripts defined in package.json to run. The predeploy script will build a distributable version of the React app and store it in a folder named build. Then, the deploy script will push the contents of that folder to a new commit on the gh-pages branch of the Github repository, creating that branch if it doesn't already exist. Github Pages will automatically detect that a new commit has been added to the gh-pages branch of the Github repository. Once it detects that, it will begin serving the files that make up that commit.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
